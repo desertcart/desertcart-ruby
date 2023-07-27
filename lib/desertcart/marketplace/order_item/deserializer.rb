@@ -37,8 +37,8 @@ module Desertcart
                        hash_attribute: 'shipping_address',
                        deserializer: ShippingAddress::Deserializer
         references_many :variations,
-                       hash_attribute: 'variations',
-                       deserializer: Variation::Deserializer
+                        hash_attribute: 'variations',
+                        deserializer: Variation::Deserializer
       end
     end
   end

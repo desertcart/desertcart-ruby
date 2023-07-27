@@ -34,7 +34,7 @@ module Desertcart
       references_one :shipping_address,
                      to: Desertcart::Marketplace::ShippingAddress
       references_many :variations,
-                     to: Desertcart::Marketplace::Variation
+                      to: Desertcart::Marketplace::Variation
     end
   end
 end

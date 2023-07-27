@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative '../shipping_address/deserializer'
+require_relative '../variation/deserializer'
 
 module Desertcart
   module Marketplace
@@ -35,6 +36,9 @@ module Desertcart
         references_one :shipping_address,
                        hash_attribute: 'shipping_address',
                        deserializer: ShippingAddress::Deserializer
+        references_many :variations,
+                       hash_attribute: 'variations',
+                       deserializer: Variation::Deserializer
       end
     end
   end

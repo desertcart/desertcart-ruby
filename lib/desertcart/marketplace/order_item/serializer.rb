@@ -31,6 +31,7 @@ module Desertcart
         attribute :purchase_order
         attribute :shipping_address
         attribute :note
+        attribute :allow_store_switching
       end
     end
   end

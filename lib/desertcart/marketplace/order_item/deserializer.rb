@@ -32,6 +32,7 @@ module Desertcart
         attribute :accepted_at
         attribute :purchase_order
         attribute :note
+        attribute :allow_store_switching
         references_one :shipping_address,
                        hash_attribute: 'shipping_address',
                        deserializer: ShippingAddress::Deserializer

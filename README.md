@@ -87,7 +87,7 @@ require 'desertcart'
 
 client = Desertcart::Client.new(user_id: Setting['DESERTCART_USER_ID'], user_token: Setting['DESERTCART_USER_TOKEN'], store_id: Setting['DESERTCART_AMAZON_US_ID'], store_token: Setting['DESERTCART_AMAZON_US_TOKEN'])
 
-search = Desertcart::Marketplace::PendingOrderItem::Searcher.new(client: client, query: {updated_at_eq: Time.zone.now})
+search = Desertcart::Marketplace::PendingOrderItem::Searcher.new(client: client, query: {updated_at_gte: 1.day.ago.to_i})
 search.resources
 ```
 

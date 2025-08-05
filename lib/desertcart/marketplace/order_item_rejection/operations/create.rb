@@ -10,7 +10,7 @@ module Desertcart
           class Contract < LedgerSync::Ledgers::Contract
             params do
               required(:order_item).maybe(:hash, Types::Reference)
-              optional(:reason).maybe(:string)
+              optional(:reason_for_rejection).maybe(:string)
             end
           end
 

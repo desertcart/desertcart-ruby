@@ -8,7 +8,7 @@ module Desertcart
           resource = args.fetch(:resource)
           resource.order_item.ledger_id
         end
-        attribute :reason
+        attribute :reason_for_rejection
       end
     end
   end

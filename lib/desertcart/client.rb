@@ -4,7 +4,7 @@ module Desertcart
   class Client
     include LedgerSync::Ledgers::Client::Mixin
 
-    ROOT_URI = 'https://api.desertcart.com/api'
+    ROOT_URI = 'https://desertcart.ae/api'
 
     REQUEST_HEADERS = { 'Accept' => 'application/vnd.api+json; version:3.0',
                         'Content-Type' => 'application/json' }.freeze

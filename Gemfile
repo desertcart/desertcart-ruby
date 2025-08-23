@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gem 'ledger_sync', github: 'sandbite/ledger_sync'
+gem 'ledger_sync', github: 'LedgerSync/ledger_sync', branch: 'master'
 
 # Specify your gem's dependencies in desertcart.gemspec
 gemspec

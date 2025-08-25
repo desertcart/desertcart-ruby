@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'shipping_address'
+require_relative 'variation'
 
 module Desertcart
   module Marketplace
@@ -33,6 +34,8 @@ module Desertcart
       attribute :allow_store_switching, type: LedgerSync::Type::Boolean
       references_one :shipping_address,
                      to: Desertcart::Marketplace::ShippingAddress
+      references_many :variations,
+                      to: Desertcart::Marketplace::Variation
     end
   end
 end

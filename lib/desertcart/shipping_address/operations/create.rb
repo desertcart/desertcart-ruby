@@ -13,6 +13,7 @@ module Desertcart
             optional(:city).maybe(:string)
             optional(:post_code).maybe(:string)
             optional(:country_code).maybe(:string)
+            optional(:address_code).maybe(:string)
           end
         end
       end

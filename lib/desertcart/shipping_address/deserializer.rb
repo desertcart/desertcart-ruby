@@ -15,6 +15,7 @@ module Desertcart
       attribute :country_name
       attribute :tax_number
       attribute :national_id_number
+      attribute :address_code
     end
   end
 end

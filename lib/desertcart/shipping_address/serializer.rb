@@ -12,6 +12,7 @@ module Desertcart
       attribute :post_code
       attribute :country_code
       attribute :country_name
+      attribute :address_code
     end
   end
 end

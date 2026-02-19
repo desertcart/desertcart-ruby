@@ -46,8 +46,8 @@ module Desertcart
       request = LedgerSync::Ledgers::Request.new(
         body: args.fetch(:body, nil),
         headers: args.fetch(:headers, {})
-          .merge(REQUEST_HEADERS)
-          .merge(auth_headers),
+                 .merge(REQUEST_HEADERS)
+                 .merge(auth_headers),
         method: args.fetch(:method),
         url: url_from_path(path: args.fetch(:path)),
         params: args.fetch(:params, {})

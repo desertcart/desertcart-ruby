@@ -31,6 +31,7 @@ module Desertcart
       attribute :purchase_order, type: LedgerSync::Type::String
       attribute :note, type: LedgerSync::Type::String
       attribute :allow_store_switching, type: LedgerSync::Type::Boolean
+      attribute :variations, type: LedgerSync::Type::Value
       references_one :shipping_address,
                      to: Desertcart::Marketplace::ShippingAddress
     end

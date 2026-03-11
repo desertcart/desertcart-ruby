@@ -14,6 +14,7 @@ module Desertcart
     attribute :tax_number, type: LedgerSync::Type::String
     attribute :national_id_number, type: LedgerSync::Type::String
     attribute :address_type, type: LedgerSync::Type::String
+    attribute :province, type: LedgerSync::Type::String
     attribute :address_code, type: LedgerSync::Type::String
   end
 end
